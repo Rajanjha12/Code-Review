@@ -61,3 +61,34 @@ main .right {
   font-size: 1.1rem;
   overflow: auto;
 }
+@media (max-width: 768px) {
+  main {
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  main .left,
+  main .right {
+    flex-basis: auto;
+    width: 100%;
+    height: auto;
+  }
+
+  .left .code,
+  .code pre,
+  .code pre code {
+    min-height: 250px;
+  }
+
+  .review {
+    position: static;
+    margin: 1rem auto 0 auto;
+    display: block;
+    width: fit-content;
+  }
+
+  main .right {
+    max-height: 300px;
+    overflow-y: auto;
+  }
+}
