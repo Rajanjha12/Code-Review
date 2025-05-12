@@ -11,8 +11,7 @@ import './App.css'
 
 function App() {
   const [ count, setCount ] = useState(0)
-  const [ code, setCode ] = useState(` function sum() {
-  return 1 + 1
+  const [ code, setCode ] = useState(` Hello, I'm Rajan Kumar Jha Thank you for visiting my website Please upload own code 
 }`)
 
   const [ review, setReview ] = useState(``)
