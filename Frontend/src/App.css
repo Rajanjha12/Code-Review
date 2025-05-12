@@ -29,16 +29,29 @@ main .right {
 main .left {
   background-color: #000000;
   position: relative;
+  overflow: auto;
+  
+}
+main .left .code {
+          
+  max-height: 80vh;       
+  width: 100%;
+  overflow-y: auto;        
 }
 
+.left
 .left .code,
 .code pre,
 .code pre code {
-  height: 100%;
+ height: auto;
   width: 100%;
   margin: 0;
   border-radius: 0.7rem;
   background-color: #0c0c0c;
+  height: auto;
+  white-space: pre-wrap;   
+  word-wrap: break-word;
+  overflow: auto;   
 }
 
 main .left .review {
@@ -88,7 +101,7 @@ main .right {
   }
 
   main .right {
-    max-height: 400px;
+    max-height: 500px;
     overflow-y: auto;
   }
 }
