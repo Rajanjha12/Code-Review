@@ -11,9 +11,8 @@ import './App.css'
 
 function App() {
   const [ count, setCount ] = useState(0)
-  const [ code, setCode ] = useState(` function sum() {
-  return 1 + 1
-}`)
+  const [ code, setCode ] = useState(` "Hello, I'm Rajan Kumar Jha Thank you for visiting my website Please upload own code" 
+`)
 
   const [ review, setReview ] = useState(``)
 
@@ -22,7 +21,7 @@ function App() {
   }, [])
 
   async function reviewCode() {
-    const response = await axios.post('http://localhost:3000/ai/get-review', { code })
+    const response = await axios.post('https://code-review-1psc.onrender.com/ai/get-review', { code })
     setReview(response.data)
   }
 

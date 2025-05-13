@@ -36,8 +36,12 @@ main .left .code {
           
   max-height: 80vh;       
   width: 100%;
+<<<<<<< HEAD
   overflow-y: auto;   
    border: 2px solid transparent;      
+=======
+  overflow-y: auto;        
+>>>>>>> 9f559c9135a115d780cda3f7f362c1e5dfa4c224
 }
 
 .left
